@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<!-- Import tModLoader mod properties -->
+	<Import Project="..\tModLoader.targets" />
+
+	<!-- General -->
+	<PropertyGroup>
+		
+	</PropertyGroup>
+	<ItemGroup>
+	  <AdditionalFiles Remove="Content\Gores\**" />
+	  <AdditionalFiles Remove="Effects\**" />
+	  <Compile Remove="Content\Gores\**" />
+	  <Compile Remove="Effects\**" />
+	  <EmbeddedResource Remove="Content\Gores\**" />
+	  <EmbeddedResource Remove="Effects\**" />
+	  <None Remove="Content\Gores\**" />
+	  <None Remove="Effects\**" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Content\Items\Placeable\Crafting\MortarAndPestle.png" />
+	  <None Remove="Content\Items\Placeable\Furniture\SmallBowlOfSalt.png" />
+	  <None Remove="Content\Items\Placeable\Furniture\SmallBowlOfWater.png" />
+	  <None Remove="Content\Tiles\Furniture\SmallBowlOfWater.png" />
+	</ItemGroup>
+
+	<!-- References -->
+	<ItemGroup>
+	  <Folder Include="Assets\" />
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+displayName = Sages and Mystics
+author = _Sunshy
+version = 0.1
+hideCode = true
+hideResources = true
+includeSource = false

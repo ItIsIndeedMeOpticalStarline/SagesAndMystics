@@ -1,0 +1,231 @@
+Items: {
+	SagesWater: {
+		DisplayName: Sage's Water
+		Tooltip:
+			'''
+			Ritual component
+			Tastes like candy
+			'''
+	}
+
+	Stardust: {
+		DisplayName: Stardust
+		Tooltip: "'How I wonder what you are'"
+	}
+
+	SagesWorkbench: {
+		DisplayName: Sage's Work Bench
+		Tooltip: Used for mystical crafting
+	}
+
+	StarBunnyFur: {
+		DisplayName: Star Bunny Fur
+		Tooltip: Softer than silk
+	}
+
+	StarBunny: {
+		DisplayName: Star Bunny
+		Tooltip: ""
+	}
+
+	StarBunnyCage: {
+		DisplayName: Star Bunny Cage
+		Tooltip: ""
+	}
+
+	LuckyRabbitsFoot: {
+		DisplayName: Lucky Rabbit's Foot
+		Tooltip: 15% increased luck
+	}
+
+	Salt: {
+		DisplayName: Salt
+		Tooltip: Ritual component
+	}
+
+	SaltPouch: {
+		DisplayName: Salt Pouch
+		Tooltip: Prevents ghosts from spawning
+	}
+
+	SaltShaker: {
+		DisplayName: Salt Shaker
+		Tooltip: "'Season your enemies!'"
+	}
+
+	MandrakeRoot: {
+		DisplayName: Mandrake Root
+		Tooltip: ""
+	}
+
+	MandrakeRootSeeds: {
+		DisplayName: Mandrake Root Seeds
+		Tooltip: ""
+	}
+
+	Headphones: {
+		DisplayName: Headphones
+		Tooltip: Provides immunity to the cry of the Mandrake Root
+	}
+
+	Athame: {
+		DisplayName: Athame
+		Tooltip:
+			'''
+			Ritual component when consecrated
+			Deals damage to ghostly monsters when consecrated
+			'''
+		Consecrated: Consecrated
+		NotConsecrated: Not consecrated
+	}
+
+	WitchsCandle: {
+		DisplayName: Witch's Candle
+		Tooltip: Ritual setup item
+	}
+
+	Altar: {
+		DisplayName: Altar
+		Tooltip: Unlocks different recipes depending on the ritual setup
+	}
+
+	SmallBowl: {
+		DisplayName: Small Bowl
+		Tooltip: ""
+	}
+
+	SmallBowlOfSalt: {
+		DisplayName: Small Bowl of Salt
+		Tooltip: Ritual setup item
+	}
+
+	SmallBowlOfWater: {
+		DisplayName: Small Bowl of Water
+		Tooltip: Ritual setup item
+	}
+
+	KosherSalt: {
+		DisplayName: Kosher Salt
+		Tooltip: Ritual component
+	}
+
+	MortarAndPestle: {
+		DisplayName: Mortar And Pestle
+		Tooltip: Used for crafting various powders
+	}
+}
+
+Projectiles: {
+	SagesWater.DisplayName: Sage's Water
+	SaltSpray.DisplayName: Salt
+	MandrakeCry.DisplayName: Mandrake Cry
+}
+
+Emotes.SageEmote.Command: sageemote
+
+NPCs: {
+	Sage: {
+		DisplayName: Sage
+
+		TownNPCMood: {
+			Content: I am content.
+			NoHome: I hate not having a home.
+			FarFromHome: I am too far from home.
+			LoveSpace: I love having so much space.
+			DislikeCrowded: I dislike how crowded I am.
+			HateCrowded: I hate how crowded I am.
+			LoveBiome: I love {BiomeName}.
+			LikeBiome: I like {BiomeName}.
+			DislikeBiome: I dislike {BiomeName}.
+			HateBiome: I hate {BiomeName}.
+			LoveNPC: I love {NPCName}.
+			LikeNPC: I like {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			HateNPC: I hate {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+
+	StarBunny.DisplayName: Star Bunny
+	MandrakeRoot.DisplayName: Mandrake Root
+}
+
+Bestiary: {
+	Sage:
+		'''
+		A mysterious Sage claiming to be familiar in the mystic arts.
+		If he's as powerful as he claims, why hasn't he ascended already?
+		'''
+	StarBunny: A bunny from beyond the vale. I wonder what it tastes like?
+	MandrakeRoot: An annoying plant with a chilling screech. Make sure to bring headphones!
+}
+
+Dialogue: {
+	Sage: {
+		Greeting:
+			'''
+			Hello {0}, are you ready to bring yourself closer
+			to Paradise?
+			'''
+		WitchDoctor: Make note of {0}. They are a well versed sage in their own right.
+		Cyborg: Can you believe I have to live near {0}? It's presence unnerves me.
+		NewTextAvailable: Ah, {0}! Just who I wanted to see. I have some new information on a ritual which may prove useful to you.
+		Help1:
+			'''
+			So you wish to learn the mystic arts? Very well, I have much I can teach you! The mystic arts are based around 
+			rituals, or actions taken in the world to achieve a specific
+			outcome. One who performs rituals is called a Sage or Mystic. A good starting ritual is the Rite of Imbued Starlight.
+			'''
+		Help2:
+			'''
+			To perform the Rite of Imbued Starlight, the Mystic needs a fundamental ritual component: a bottle of Sage's
+			Water.
+			Recipe: [i:Bottle] + [i:SagesAndMystics/Stardust] @ [i:WaterBucket] = [i:SagesAndMystics/SagesWater]
+			'''
+		Help3:
+			'''
+			The Rite of Imbued Starlight garners the Sage performing it a powerful crafting station known as
+			a 'Sage's Work Bench.' To perform it one will need to craft a bottle of Sage's Water and throw it onto a Work Bench.
+			Ritual: [i:SagesAndMystics/SagesWater] + [i:WorkBench] = [i:SagesAndMystics/SagesWorkbench]
+			'''
+		Help4:
+			'''
+			The Rite of Imbued Starlight dosen't only affect items, it also can affect certain creatures as well. Try splashing a bunny with Sage's Water!
+			Ritual: [i:SagesAndMystics/SagesWater] + [i:Bunny] = [i:SagesAndMystics/StarBunny]
+			'''
+	}
+
+	ChatOptions: {
+		Sage: {
+			NextHelp: Next
+			PrevHelp: Previous
+		}
+	}
+}
+
+Configs: {
+	SagesAndMysticsConfig: {
+		DisplayName: Sages and Mystics Config
+
+		sageRemembers: {
+			Label: Sage remembers last help tip
+			Tooltip: The Sage will remember which help tip it last displayed to the user and display that help tip when interacted with
+		}
+	}
+}
+
+Tiles: {
+	StarBunnyCage.MapEntry: Star Bunny Cage
+	Salt.MapEntry: Salt
+	SagesWorkbench.MapEntry: Sage's Workbench
+	MandrakeRoot.MapEntry: Mandrake Root
+	WitchsCandle.MapEntry: Witch's Candle
+	Altar.MapEntry: Altar
+	SmallBowl.MapEntry: Small Bowl
+	SmallBowlOfSalt.MapEntry: Small Bowl of Salt
+	SmallBowlOfWater.MapEntry: Small Bowl of Water
+	MortarAndPestle.MapEntry: Mortar and Pestle
+}
+
+WorldGen.WorldGenSaltPassMessage: Salting the earth
