@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace SagesAndMystics.Content.Items.Accessories.PHM
+namespace SagesAndMystics.Content.Items.Accessories.PreHardmode
 {
     public class SaltPouch : ModItem
     {

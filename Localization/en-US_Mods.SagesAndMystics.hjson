@@ -40,7 +40,7 @@ Items: {
 
 	Salt: {
 		DisplayName: Salt
-		Tooltip: Ritual component
+		Tooltip: ""
 	}
 
 	SaltPouch: {
@@ -113,12 +113,75 @@ Items: {
 		DisplayName: Mortar And Pestle
 		Tooltip: Used for crafting various powders
 	}
+
+	Boline: {
+		DisplayName: Boline
+		Tooltip:
+			'''
+			Sometimes increases vanilla herb yield
+			When used to harvest Mandrake prevents the root from attacking you
+			'''
+	}
+
+	DreamBroadsword: {
+		DisplayName: Dream Broadsword
+		Tooltip: Fires short-range homing spirits
+	}
+
+	DreamKatana: {
+		DisplayName: Dream Katana
+		Tooltip: Fires peircing spirit needles
+	}
+
+	FlaresproutBoots: {
+		DisplayName: Flaresprout Boots
+		Tooltip:
+			'''
+			Allows flight
+			You can run super fast
+			Leaves a trail of flames in your wake
+			Flowers which wilt into damaging pollen grow on the grass you walk on
+			'''
+	}
+
+	DesertFrogBoots: {
+		DisplayName: Desert Frog Boots
+		Tooltip:
+			'''
+			You can run super fast, and even faster on sand
+			Increases jump speed and allows auto-jump
+			Increases fall resistance
+			'''
+	}
+
+	TerrasproutTreads: {
+		DisplayName: Terrasprout Treads
+		Tooltip:
+			'''
+			Allows flight
+			You can run super fast, and even faster on sand
+			Increases jump speed and allows auto-jump
+			Increases fall resistance
+			Leaves a trail of sparks in your wake
+			Flowers which wilt into damaging pollen grow on the grass you walk on
+			'''
+	}
 }
 
 Projectiles: {
 	SagesWater.DisplayName: Sage's Water
 	SaltSpray.DisplayName: Salt
 	MandrakeCry.DisplayName: Mandrake Cry
+	DreamSpirit.DisplayName: Dream Spirit
+	SpiritNeedle.DisplayName: Spirit Needle
+	Flaresprout.DisplayName: Flaresprout
+	FlaresproutSpore.DisplayName: Flaresprout Spore
+	BakuBall.DisplayName: Baku Ball
+	BakuNeedle.DisplayName: Baku Needle
+	BakuNightmare.DisplayName: Baku Nightmare
+	BakuSeal.DisplayName: Baku Seal
+	Terrasprout.DisplayName: Terrasprout
+	TerrasproutSpore.DisplayName: Terrasprout Spore
 }
 
 Emotes.SageEmote.Command: sageemote
@@ -149,6 +212,8 @@ NPCs: {
 
 	StarBunny.DisplayName: Star Bunny
 	MandrakeRoot.DisplayName: Mandrake Root
+	Baku.DisplayName: Baku
+	Nightmare.DisplayName: Nightmare
 }
 
 Bestiary: {

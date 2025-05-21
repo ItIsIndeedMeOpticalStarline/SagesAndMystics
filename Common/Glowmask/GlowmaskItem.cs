@@ -14,13 +14,14 @@ namespace SagesAndMystics.Common.Glowmask
 
         public override void PostDrawInWorld(Item item, SpriteBatch spriteBatch, Color lightColor, Color alphaColor, float rotation, float scale, int whoAmI)
         {
-            Texture2D texture = (item.ModItem as IGlowmask).GlowmaskTexture;
+            IGlowmask glowmaskItem = item.ModItem as IGlowmask;
+            Texture2D texture = glowmaskItem.GlowmaskTexture;
             Rectangle frame = Main.itemAnimations[item.type]?.GetFrame(texture) ?? texture.Frame();
             Vector2 drawOrigin = frame.Size() / 2f;
             Vector2 drawOffset = new(item.width / 2 - drawOrigin.X, item.height - frame.Height);
             Vector2 drawPosition = item.position - Main.screenPosition + drawOrigin + drawOffset;
 
-            spriteBatch.Draw(texture, drawPosition, frame, new Color(250, 250, 250, (item.ModItem as IGlowmask).GlowmaskAlpha), rotation, drawOrigin, scale, SpriteEffects.None, 0f);
+            spriteBatch.Draw(texture, drawPosition, frame, new Color(250, 250, 250, glowmaskItem.GlowmaskAlpha), rotation, drawOrigin, scale, SpriteEffects.None, 0f);
         }
     }
 }

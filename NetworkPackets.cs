@@ -6,7 +6,7 @@ using SagesAndMystics.Common;
 
 namespace SagesAndMystics
 {
-    public class NetHelper
+    public class NetworkPackets
     {
         private enum MessageType : byte
         {

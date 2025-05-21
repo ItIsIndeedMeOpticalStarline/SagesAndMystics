@@ -35,10 +35,10 @@ namespace SagesAndMystics.Content.Items.Materials
 
         public bool PreDraw(ref PlayerDrawSet drawSet, Texture2D glowTexture) => true;
 
-        public int GlowmaskOffsetX { get { return 10; } }
+        public int GlowmaskOffsetX => 10;
 
-        public int GlowmaskOffsetY { get { return 0; } }
+        public int GlowmaskOffsetY => 0;
 
-        public int GlowmaskAlpha { get { return 255; } }
+        public int GlowmaskAlpha => 255;
     }
 }

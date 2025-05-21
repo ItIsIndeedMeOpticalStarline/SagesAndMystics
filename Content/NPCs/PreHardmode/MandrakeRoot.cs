@@ -35,11 +35,12 @@ namespace SagesAndMystics.Content.NPCs.PreHardmode
             NPC.HitSound = SoundID.NPCHit1;
             NPC.DeathSound = SoundID.NPCDeath2;
 
-            NPC.value = 0;
             NPC.aiStyle = 3;
             AIType = NPCID.GoblinScout;
 
             AnimationType = NPCID.Zombie;
+
+            NPC.value = 0;
         }
 
         public override void SetBestiary(BestiaryDatabase database, BestiaryEntry bestiaryEntry)

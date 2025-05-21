@@ -7,9 +7,6 @@ using SagesAndMystics.Content.Items.Placeable.Crafting;
 using System;
 using Terraria.Audio;
 using SagesAndMystics.Content.Items.Materials.Seeds;
-using SagesAndMystics.Common.Systems.Primitives;
-using Microsoft.Xna.Framework.Graphics;
-using System.Collections.Generic;
 
 namespace SagesAndMystics.Content.Projectiles.PreHardmode.Ranged
 {
@@ -27,12 +24,12 @@ namespace SagesAndMystics.Content.Projectiles.PreHardmode.Ranged
             Projectile.height = 14;
 
             Projectile.aiStyle = 2;
+            Projectile.ignoreWater = true;
+            Projectile.penetrate = -1;
 
+            Projectile.DamageType = DamageClass.Ranged;
             Projectile.friendly = true;
 
-            Projectile.ignoreWater = true;
-
-            Projectile.penetrate = -1;
         }
 
         private bool CloseEnoughToTransmute(Vector2 pos1, Vector2 pos2)

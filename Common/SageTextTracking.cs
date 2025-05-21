@@ -20,7 +20,7 @@ namespace SagesAndMystics.Common
                 if (Main.netMode == NetmodeID.SinglePlayer)
                     SetPendingText();
                 else
-                    NetHelper.SendSageTextUpdate();
+                    NetworkPackets.SendSageTextUpdate();
             }
         }
 

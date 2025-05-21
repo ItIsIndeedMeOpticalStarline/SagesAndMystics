@@ -7,7 +7,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace SagesAndMystics.Content.Items.Accessories.PHM
+namespace SagesAndMystics.Content.Items.Accessories.PreHardmode
 {
     public class LuckyRabbitsFoot : ModItem, IGlowmask
     {
@@ -37,10 +37,10 @@ namespace SagesAndMystics.Content.Items.Accessories.PHM
 
         public bool PreDraw(ref PlayerDrawSet drawSet, Texture2D glowTexture) => true;
 
-        public int GlowmaskOffsetX { get { return 10; } }
+        public int GlowmaskOffsetX => 10;
 
-        public int GlowmaskOffsetY { get { return 0; } }
+        public int GlowmaskOffsetY => 0;
 
-        public int GlowmaskAlpha { get { return 255; } }
+        public int GlowmaskAlpha => 255;
     }
 }

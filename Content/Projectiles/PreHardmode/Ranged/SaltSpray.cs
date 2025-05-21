@@ -4,7 +4,6 @@ using SagesAndMystics.Content.Dusts;
 using SagesAndMystics.Content.Items.Weapons.PreHardmode.Classless;
 using SagesAndMystics.Content.Tiles.Crafting;
 using SagesAndMystics.Content.Tiles.Furniture;
-using Microsoft.Xna.Framework;
 using System;
 using Terraria.ID;
 
@@ -12,6 +11,8 @@ namespace SagesAndMystics.Content.Projectiles.PreHardmode.Ranged
 {
     public class SaltSpray : ModProjectile
     {
+        public override string Texture => "SagesAndMystics/Assets/Textures/EmptyTexture";
+
         public bool Initalized
         {
             get => Projectile.ai[0] == 1f;
@@ -29,18 +30,16 @@ namespace SagesAndMystics.Content.Projectiles.PreHardmode.Ranged
             Projectile.height = 64;
 
             Projectile.aiStyle = -1;
-
-            Projectile.friendly = true;
-
             Projectile.penetrate = -1;
-
-            Projectile.alpha = 255;
-
             Projectile.tileCollide = false;
             Projectile.ignoreWater = true;
             Projectile.timeLeft = 45;
-
             Projectile.penetrate = -1;
+
+            Projectile.DamageType = DamageClass.Ranged;
+            Projectile.friendly = true;
+
+            Projectile.alpha = 255;
         }
 
         public override void AI()

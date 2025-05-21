@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using SagesAndMystics.Content.Items.Materials.Herbs;
+using SagesAndMystics.Content.Items.Tools.Hardmode;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.DataStructures;
@@ -121,7 +121,12 @@ namespace SagesAndMystics.Content.Tiles.Herbs
             Vector2 worldPosition = new Vector2(i, j).ToWorldCoordinates();
 
             if (stage == PlantStage.Grown)
-                NPC.NewNPC(new EntitySource_TileBreak(i, j), (int)worldPosition.X, (int)worldPosition.Y, ModContent.NPCType<NPCs.PreHardmode.MandrakeRoot>());
+            {
+                if (Main.LocalPlayer.HeldItem.type == ModContent.ItemType<Boline>() && Main.LocalPlayer.itemAnimation > 0)
+                    yield return new Item(ModContent.ItemType<Items.Materials.Herbs.MandrakeRoot>());
+                else
+                    NPC.NewNPC(new EntitySource_TileBreak(i, j), (int)worldPosition.X, (int)worldPosition.Y, ModContent.NPCType<NPCs.PreHardmode.MandrakeRoot>());
+            }
 
             yield return new Item(ItemID.None, 0);
         }

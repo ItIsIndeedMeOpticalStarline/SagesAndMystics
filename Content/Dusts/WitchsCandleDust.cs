@@ -38,9 +38,8 @@ namespace SagesAndMystics.Content.Dusts
             }
 
             if (!dust.noGravity)
-            {
                 dust.velocity.Y += 0.05f;
-            }
+
             if (!dust.noLight && !dust.noLightEmittence)
             {
                 float lightFade = dust.scale * 1.4f;
